@@ -13,15 +13,12 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build -t wec .
-      
-    - name: Docker login
-      env: |
-        DOCKER_USERNAME : ${{ secrets.DOCKERHUB_USERNAME }}
-        DOCKER_PASSWORD : ${{ secrets.DOCKERHUB_PASSWORD }}
-      run: |
-        docker login -u $DOCKER_USERNAME -p DOCKER_PASSWORD
-    - name: Docker push
-      run: |
-        docker push wec:latest
+    - uses: mr-smithers-excellent/docker-build-push@v5
+      name: Build & push Docker image
+      with:
+        image: jokesta/wec
+        tags: v1, latest
+        registry: registry-url.io
+        dockerfile: Dockerfile.ci
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
