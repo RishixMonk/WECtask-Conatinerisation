@@ -22,4 +22,4 @@ jobs:
         docker login -u jokesta -p randyorton@123
     - name: Docker push
       run: |
-        docker push jokesta/wec
+        docker push wec:latest
