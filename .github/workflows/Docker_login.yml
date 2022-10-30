@@ -20,9 +20,3 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
       run: docker login -u $DOCKER_NAME -p $DOCKER_PASSWORD
 
-    - name: Push Image
-      env:
-        APP_NAME: "imagee"
-      run: |
-        docker tag $APP_NAME $DOCKER_NAME/wec
-        docker push $DOCKER_NAME/wec
