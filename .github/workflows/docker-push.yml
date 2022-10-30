@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Push into Docker Hub
+      env:
+        DOCKER_USERNAME: ${{secrets.DOCKERHUB_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+        IMAGE_NAME: "imagee"
+      run: |
+       docker tag IMAGE_NAME $DOCKER_USERNAME/wec1
+       docker push $DOCKER_USERNAME/wec1
