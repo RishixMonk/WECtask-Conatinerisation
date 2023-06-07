@@ -17,6 +17,9 @@
 
 ![Screenshot from 2022-10-31 01-00-57](https://user-images.githubusercontent.com/95615048/198897958-c5859698-9664-46b7-82ec-de12f7673edf.png)
 
+![Screenshot from 2022-10-31 00-21-44](https://user-images.githubusercontent.com/95615048/198896282-596b6ac8-040e-4851-a332-26476439d537.png)
+
+![Screenshot from 2022-10-24 23-06-44](https://user-images.githubusercontent.com/95615048/198895774-2336fdd1-8898-4b08-8b33-983583f8ca9c.png)
 ![Screenshot from 2022-10-31 01-00-39](https://user-images.githubusercontent.com/95615048/198897963-be4bddaf-9ac8-4d23-af01-6a5b10418bf7.png)
 
 
