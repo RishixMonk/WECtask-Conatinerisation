@@ -25,4 +25,7 @@ jobs:
         DOCKER_USERNAME: "jokesta"
         DOCKER_PASSWORD: "rR1630rR@123"
         IMAGE_NAME: "imagee"
-      run: |
+      run: 
+       docker tag $IMAGE_NAME $DOCKER_USERNAME/wec1
+       docker push $DOCKER_USERNAME/wec1
+  
