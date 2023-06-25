@@ -26,7 +26,7 @@ SECRET_KEY ='django-insecure-&qkcsn!j=p1ops_*=ql&xcmh=z^yo9%&=xb5hq2g-gghsow71x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['inv-manage-college-clubs.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
