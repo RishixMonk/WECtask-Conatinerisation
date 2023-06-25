@@ -4,6 +4,7 @@ set -e
 echo "Deployment started ..."
 
 # Pull the latest version of the app
+git stash
 git pull origin main
 echo "New changes copied to server !"
 
