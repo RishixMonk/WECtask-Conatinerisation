@@ -25,6 +25,6 @@ python manage.py migrate
 deactivate
 echo "Virtual env 'mb' Deactivated !"
 
-# Reloading Application So New Changes could reflect on website
+# Reloading Application So New Changes could reflect on the website
 
 echo "Deployment Finished!"
