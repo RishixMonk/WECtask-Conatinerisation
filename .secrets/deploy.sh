@@ -15,9 +15,6 @@ echo "Virtual env 'mb' Activated !"
 echo "Installing Dependencies..."
 pip3 install -r requirements.txt --no-input
 
-echo "Serving Static Files..."
-python3 manage.py collectstatic --noinput
-
 echo "Running Database migration"
 python3 manage.py makemigrations
 python3 manage.py migrate
