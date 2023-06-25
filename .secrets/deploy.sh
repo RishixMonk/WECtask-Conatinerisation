@@ -19,7 +19,6 @@ echo "Running Database migration"
 python3 manage.py makemigrations
 python3 manage.py migrate
 
-python3 manage.py runserver 0.0.0.0:8000
 
 # Reloading Application So New Changes could reflect on the website
 echo "Deployment Finished!"
