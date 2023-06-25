@@ -4,7 +4,7 @@ set -e
 echo "Deployment started ..."
 
 # Pull the latest version of the app
-git pull origin master
+git pull origin main
 echo "New changes copied to server !"
 
 # Activate Virtual Env
@@ -25,6 +25,6 @@ python manage.py migrate
 deactivate
 echo "Virtual env 'mb' Deactivated !"
 
-# Reloading Application So New Changes could reflect on website
+# Reloading Application So New Changes could reflect on the website
 
 echo "Deployment Finished!"
