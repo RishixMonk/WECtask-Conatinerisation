@@ -8,7 +8,7 @@ git pull origin main
 echo "New changes copied to server !"
 
 # Activate Virtual Env
-source mb/bin/activate
+source venv/bin/activate
 echo "Virtual env 'mb' Activated !"
 
 echo "Installing Dependencies..."
