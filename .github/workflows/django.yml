@@ -12,6 +12,7 @@ jobs:
       max-parallel: 4
       matrix:
         python-version: [3.11]
+        django-version: [3.2]  # Replace this with your desired Django version
 
     steps:
     - uses: actions/checkout@v3
@@ -24,8 +25,9 @@ jobs:
         pip install pip==21.3.1
         python3 -m pip install --user virtualenv
         python3 -m venv env
-        source venv/bin/activate
+        source env/bin/activate
         pip install wheel setuptools pip --upgrade
+        pip install Django==${{ matrix.django-version }}
         pip install -r requirements.txt
     - name: Run Tests
       run: |
